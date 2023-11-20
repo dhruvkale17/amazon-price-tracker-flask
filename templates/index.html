@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+  body{
+    font-family: sans-serif;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .form {
+    width: 400px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .form input {
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 10px ;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+  }
+
+  .form button {
+    width: 100%;
+    background-color: rgb(63, 187, 63);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1> Amazon Product Price Tracker </h1>
+    <p>Paste the link of the Amazon product you want to buy under a budget you have and get an email notification when it falls under the price.</p>
+  </div>
+  <div class="container">
+    <form class="form" name="inputForm" action="/" method="POST" onsubmit="alert('Done!!')">
+      <input type="url" name="url" placeholder="Product link" required>
+      <input type="number" name="budget" placeholder="Your budget" required>
+      <input type="email" name="email" placeholder="Your Email ID" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
